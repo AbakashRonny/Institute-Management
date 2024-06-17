@@ -1,0 +1,42 @@
+<!doctype html>
+{% extends 'CodeDaisApp/base.html' %}
+
+{% block body %}
+{% load static %}
+<hr>
+<div class="center-container">
+    <div class="card mb-3" style="max-width: 1080px;">
+        <div class="col-md-12">
+            <div class="card-body">
+                <h5 class="card-title">Django: Revolutionizing Web Development - Coming Soon!</h5>
+                <hr>
+                <img src="{% static 'image/django.jpg' %}" class="img-fluid rounded-start" alt="..."
+                    style="width: 1080px;">
+                <p class="card-text">
+                    Exciting news! Django is coming soon to our blog. This highly acclaimed web framework is known for
+                    its rapid development capabilities and clean, pragmatic design. Django simplifies the process of
+                    building complex, database-driven websites with its powerful features and versatility. We'll be
+                    covering everything from basic setups to advanced functionalities, providing you with a
+                    comprehensive guide to mastering Django.
+
+                    Our upcoming series will include step-by-step tutorials, real-world examples, and expert insights to
+                    help you understand the core concepts and best practices of Django development. Whether you are
+                    looking to build a personal blog, a robust e-commerce site, or a high-traffic social media platform,
+                    Django has the tools you need to make it happen efficiently and effectively.
+
+                    In addition to technical guides, we'll delve into Django's robust security features, its rich
+                    ecosystem of reusable components, and its support for rapid prototyping and development. We'll also
+                    feature interviews with experienced Django developers, case studies of successful Django projects,
+                    and tips on optimizing performance and scalability.
+
+                    Stay tuned for our launch and start your Django journey with us. Whether you're a seasoned developer
+                    or a complete beginner, our content will provide valuable insights and practical knowledge to help
+                    you harness the full power of Django. Get ready to revolutionize your web development process and
+                    create amazing web applications with ease
+                </p>
+                <p class="card-text"><small class="text-muted">{{date}} | Surendra Kumar Panda (Author)</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

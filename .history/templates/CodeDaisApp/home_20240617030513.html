@@ -1,0 +1,86 @@
+<!doctype html>
+{% extends 'CodeDaisApp/base.html'%}
+
+{% block body %}
+{% load static %}
+<div class="text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-8" style="margin: auto;">
+                <h1>Welcome To <b>Code Dais</b></h1>
+                <h3>Learn <b>FullStack using Python</b></h3>
+                <hr>
+                <p>Confused on which course to take? I have got you covered. Browse courses and find out the best
+                    course for you. Its free! Code Dais is my attempt to teach basics and those coding techniques
+                    to people in short time which took me ages to learn.</p>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'image/home1.png' %}" alt="" height="300px">
+            </div>
+        </div>
+    </div>
+</div>
+<div style="padding: 20px;">
+    <h3>Why Learn Python?</h3>
+    <p>
+        Python is one of the most popular programming languages due to its simplicity and versatility. Whether you're
+        interested in web development, data analysis, artificial intelligence, or automation, Python is the perfect
+        starting point. Our Python courses range from beginner to advanced levels, ensuring that you can start from
+        scratch or deepen your existing knowledge.
+    </p>
+    <ul>
+        <li> <b>Beginner Python:</b>
+            Learn the fundamentals of Python programming, including syntax, data types, and control structures</li>
+        <li><b>Data Science with Python:</b>
+            Dive into data analysis, visualization, and machine learning using Python's powerful libraries.
+        </li>
+        <li><b>Web Development with Django:</b>
+            Build dynamic web applications using the Django framework.
+        </li>
+    </ul>
+
+    <center>
+        <h4>Testimonials</h4><br>
+    </center>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col" style="background-color: rgb(146, 185, 220);">
+                <h6><b>"Code Dais transformed my career!</b></h6>
+                <p>Before discovering Code Dais, I struggled to understand coding concepts. The structured and
+                    easy-to-follow courses helped me master Python and web development. The hands-on projects and
+                    real-world applications made learning practical and enjoyable. Thanks to Code Dais. I also
+                    appreciate the supportive community and the continuous updates to the course content, which keep me
+                    learning and growing.</p>
+                <b>Abakash Das , MCA2024</b>
+            </div>
+
+            <div class="vertical-line"></div>
+
+            <div class="col" style="background-color: rgb(146, 185, 220);">
+                <h6><b>"A life-changing learning experience!</b></h6>
+                <p>I was looking for a comprehensive course that could take me from a beginner to a proficient coder.
+                    Code Dais offered exactly that. The instructors are knowledgeable and supportive, and the course
+                    material is top-notch. The Python Data Science course, in particular, opened new doors for me in the
+                    data analytics field. I highly recommend Code Dais to anyone serious about learning.</p>
+                <b>Ashrumochan Pradhan , Data Analyst</b>
+            </div>
+        </div>
+    </div>
+    <center>
+        <div class="c" style="width: 400px; padding-top: 10px;">
+            <img src="{% static 'image/Instrct.png' %}" class="profile-img" alt=""
+                height="50px">
+            <h2>Hey, I'm Surendra</h2>
+            <p>I'm a full-stack developer and founder of CodeDais, nice to meet you!
+                If you're like me, you learn best by building real stuff, and that's exactly what we do here. I don't
+                create
+                unforgettable boring screencasts, we'll sit down together and learn from practical examples you can use
+                right away.
+                Don't just take my word for it though, some members are keeping their skills sharp,
+                right
+                here.</p>
+            <a href="{% url 'signup' %}" style="text-decoration: none;"><p style="padding-top: 0%;">Ready to join?</p></a>
+        </div>
+    </center>
+</div>
+{% endblock %}
